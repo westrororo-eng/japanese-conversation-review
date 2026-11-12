@@ -40,3 +40,7 @@
 @keyframes flash{from{background:#c0392bd9}to{background:#f39c12e6}}
 @media(max-width:760px){.lesson-head img{width:70px;height:70px}.card-chick{width:62px;height:62px}.card h3{margin-top:40px}.culture{grid-template-columns:1fr}.examples li{gap:8px}.flash{grid-template-columns:repeat(2,1fr)}.ngrid{grid-template-columns:repeat(3,1fr)}.ngrid.price{grid-template-columns:1fr 1fr}.timer-wrap{right:12px;bottom:12px}.tfab{width:58px;height:58px;font-size:22px}.tpanel{width:min(290px,calc(100vw - 24px))}}
 .qctx{white-space:pre-line;background:#eef4ec;border-left:5px solid #7d9b80;border-radius:0 14px 14px 0;padding:16px 20px;font-size:clamp(18px,1.7vw,24px);line-height:1.8;color:#2f4b37;margin:8px 0 4px}
+.sec-head{display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap}.sec-head h3{flex:1;min-width:0}
+.extoggle{padding:8px 16px;border-radius:24px;font-size:15px;background:#eee8f6;border-color:#cdbadf;white-space:nowrap}.sec.open .extoggle{background:#64517e;color:#fff;border-color:#64517e}
+.sec:not(.open)>.examples{display:none}.sec>.examples .feedback{margin-top:6px}
+.explain br+br{display:none}

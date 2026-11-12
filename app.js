@@ -72,7 +72,7 @@ function answer(a,el){if(answered)return;answered=true;const x=queue[qi],ok=a===
 function finishFeedback(x,label){document.querySelectorAll('[data-answer]').forEach(b=>{b.disabled=true;if(+b.dataset.answer===x.a)b.classList.add('correct')});document.getElementById('feedback').innerHTML=`<div class="feedback"><b>${label}</b><br>정답: ${'①②③'[x.a]} ${x.options[x.a]}<br><b>해설</b><br><span>${x.e}</span></div>`;document.getElementById('next').disabled=false}
 function reveal(){if(answered)return;answered=true;const x=queue[qi];if(!wrong.includes(x.id))wrong.push(x.id);save();beep(true);finishFeedback(x,'정답 공개')}
 
-function sources(){app.innerHTML=`<h1>시험 범위</h1><section class="panel"><h2>2026 일본어 회화 2차 정기시험</h2><p class="explain">교과서: 30~31, 40~43쪽<br>부교재: 4~13, 18~29, 34~35, 38~41쪽</p><p>선택형 24문항 · 이 앱의 연습 문제 ${Q.length}개는 범위 기반 연습이며 실제 시험 문제가 아닙니다.</p></section><button onclick="home()">학습 지도로</button>`;scrollTo(0,0)}
+function sources(){app.innerHTML=`<h1>시험 범위</h1><section class="panel"><h2>2026 일본어 회화 2차 정기시험</h2><p class="explain">교과서: 12~16, 30~31, 40~43쪽<br>부교재: 4~13, 18~29, 34~35, 38~41쪽</p><p>선택형 24문항 · 이 앱의 연습 문제 ${Q.length}개는 범위 기반 연습이며 실제 시험 문제가 아닙니다.</p></section><button onclick="home()">학습 지도로</button>`;scrollTo(0,0)}
 home();
 
 // Keep Korean words and Japanese lexical segments intact across line breaks.
